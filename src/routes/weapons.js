@@ -100,7 +100,7 @@ module.exports = [
             const id = request.params.id;
             db('Weapons').where('Id', id)
                 .then( (result) => {
-                    reply(result);
+                    reply({weapons: result[0]});
                 });
         },
         config: {

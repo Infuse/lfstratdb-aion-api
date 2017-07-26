@@ -60,7 +60,7 @@ module.exports = [
             const id = request.params.id;
             db('Manastones').where('Id', id)
                 .then( (result) => {
-                    reply(result);
+                    reply({manastones: result[0]});
                 });
         },
         config: {

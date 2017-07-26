@@ -98,7 +98,7 @@ module.exports = [
             const id = request.params.id;
             db('Armors').where('Id', id)
                 .then( (result) => {
-                    reply(result);
+                    reply({armors: result[0]});
                 });
         },
         config: {

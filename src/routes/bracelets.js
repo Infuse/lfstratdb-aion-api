@@ -49,7 +49,7 @@ module.exports = [
             const id = request.params.id;
             db('Bracelets').where('Id', id)
                 .then( (result) => {
-                    reply(result);
+                    reply({bracelets: result[0]});
                 });
         },
         config: {

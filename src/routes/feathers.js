@@ -54,7 +54,7 @@ module.exports = [
             const id = request.params.id;
             db('Feathers').where('Id', id)
                 .then( (result) => {
-                    reply(result);
+                    reply({feathers: result[0]});
                 });
         },
         config: {

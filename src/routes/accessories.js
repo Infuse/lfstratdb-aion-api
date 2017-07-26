@@ -96,7 +96,7 @@ module.exports = [
             const id = request.params.id;
             db('Accessories').where('Id', id)
                 .then( (result) => {
-                    reply({accessories: result});
+                    reply({accessories: result[0]});
                 });
         },
         config: {
