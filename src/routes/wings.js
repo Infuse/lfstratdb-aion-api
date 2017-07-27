@@ -90,7 +90,7 @@ module.exports = [
             const id = request.params.id;
             db('Wings').where('Id', id)
                 .then( (result) => {
-                    reply({weapons: result[0]});
+                    reply({wings: result[0]});
                 });
         },
         config: {
