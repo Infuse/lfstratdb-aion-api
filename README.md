@@ -1,5 +1,8 @@
 # LFStrat AionDB API
 
+## THIS API IS NOW COMPLETELY OUTDATED AS THE DATABASE BEHIND IT WAS REWORKED  #
+
+
 ### Intro
 This is [LFStrat](http://www.lfstrat.com/aion/)'s Aion database API. It returns JSON formatted data.
 If any question or suggestion, [send me an email](mailto:infuse.aion@gmail.com) or leave a message on [Github repo](https://github.com/Infuse/lfstratdb-aion-api).
